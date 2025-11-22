@@ -137,7 +137,8 @@ A arquitetura segue o modelo **FIWARE Descomplicado** proposto pelo Professor F�
 
 ### Foto do Projeto
 
-<img width="774" height="543" alt="Captura de tela 2025-11-22 054311" src="https://github.com/user-attachments/assets/eb3aaa86-1200-4b6a-9e25-dd8b926e40cc" />
+<img width="514" height="384" alt="Captura de tela 2025-11-22 133525" src="https://github.com/user-attachments/assets/871f82c1-5fe9-4d53-80dc-cb14146d6e13" />
+
 
 
 **Simulação Online**: [Testar no Wokwi](https://wokwi.com/projects/440265854761066497)
