@@ -663,12 +663,6 @@ mosquitto_sub -h SEU_IP -t "/ul/#" -v
 
 ---
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
 ## 🙏 Agradecimentos
 
 - **Professor Fábio Cabrini** pelo repositório FIWARE Descomplicado e orientações
