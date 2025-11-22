@@ -1,0 +1,8 @@
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+
+PubSubClient
+Adafruit GFX Library
+NTPClient
+Adafruit SSD1306
+ArduinoJson
