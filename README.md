@@ -60,7 +60,8 @@ Sistema de monitoramento de produtividade em tempo real utilizando **ESP32**, **
 
 ### Diagrama Completo da Solução
 
-https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy_new_v5.png
+<img width="992" height="961" alt="FiwareDeploy_new_v5" src="https://github.com/user-attachments/assets/ab4fdb72-aac2-4185-9090-606a0d16c9dd" />
+
 
 A arquitetura segue o modelo **FIWARE Descomplicado** proposto pelo Professor Fábio Cabrini:
 
@@ -136,9 +137,10 @@ A arquitetura segue o modelo **FIWARE Descomplicado** proposto pelo Professor F�
 
 ### Foto do Projeto
 
-![Projeto no Wokwi](./assets/wokwi.png)
+<img width="774" height="543" alt="Captura de tela 2025-11-22 054311" src="https://github.com/user-attachments/assets/eb3aaa86-1200-4b6a-9e25-dd8b926e40cc" />
 
-**Simulação Online**: [Testar no Wokwi](https://wokwi.com/projects/XXXXXXXX)
+
+**Simulação Online**: [Testar no Wokwi](https://wokwi.com/projects/440265854761066497)
 
 ---
 
