@@ -22,6 +22,7 @@ Sistema de monitoramento de produtividade em tempo real utilizando **ESP32**, **
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Arquitetura](#-arquitetura)
 - [Hardware](#-hardware)
+- [Dashboard em Tempo Real](#-dashboard-em-tempo-real)
 - [FIWARE - O que Usamos](#-fiware---o-que-usamos)
 - [Instalação](#-instalação)
 - [Como Usar](#-como-usar)
@@ -159,6 +160,17 @@ O **FIWARE** é uma plataforma open-source para desenvolvimento de soluções Io
 - API REST para comandos (`PATCH /v2/entities/.../attrs`)
 - Timestamp automático (`TimeInstant`)
 
+- **Protocolo UltraLight 2.0**:
+Formato simplificado chave|valor separados por |
+
+Exemplo:
+state|WORK|work_seconds|120|cycles_completed|3|pause_count|1 É traduzido para NGSI:
+{
+  "state": {"value": "WORK"},
+  "work_seconds": {"value": "120"},
+  "cycles_completed": {"value": "3"},
+  "pause_count": {"value": "1"} }
+
 **Como funciona no projeto**:
 ```
 Orion recebe do IoT Agent:
@@ -174,6 +186,7 @@ Armazena como entidade:
   "state": {...},
   "workSeconds": {...},
   "TimeInstant": "2025-11-22T15:30:45.123Z"
+  "pause_count": {...}
 }
 ```
 
@@ -526,8 +539,9 @@ fiware-servicepath: /
 | `state` | Text | IDLE, WORK ou PAUSED | Mudança de estado |
 | `workSeconds` | Text | Tempo trabalhando (segundos) | A cada 1s em WORK |
 | `cyclesCompleted` | Text | Quantidade de ciclos | Transição para IDLE |
-| `uptimeSeconds` | Text | Tempo desde boot (segundos) | A cada 5s |
+| `uptimeSeconds` | Text | Tempo desde boot (segundos) | A cada 3s |
 | `TimeInstant` | DateTime | Timestamp da atualização | Automático |
+| `PauseCount` | Text | Quantidade de pausas | a cada clique de saida após o botão vermelho ser pressionado |
 
 ### Exemplo de Evolução
 
@@ -561,6 +575,14 @@ t=31s : state=IDLE, workSeconds=20, cycles=1
   - Gráficos de produtividade (Chart.js)
   - Atualização via polling ou WebSocket
   - Exportar relatórios em PDF
+
+  integrado com sucesso!
+
+  - Dashboard com atualização real:
+  
+
+<img width="1608" height="994" alt="Captura de tela 2025-11-22 161925" src="https://github.com/user-attachments/assets/3ff9289d-74cd-4eb4-bbf3-f43342c8be3b" />
+
 
 - [ ] **Integração STH-Comet**
   - Consultar histórico: `GET http://IP:8666/STH/v1/...`
