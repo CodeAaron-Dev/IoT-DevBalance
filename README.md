@@ -60,7 +60,7 @@ Sistema de monitoramento de produtividade em tempo real utilizando **ESP32**, **
 
 ### Diagrama Completo da Solução
 
-![Arquitetura FIWARE](./assets/architecture.png)
+https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy_new_v5.png
 
 A arquitetura segue o modelo **FIWARE Descomplicado** proposto pelo Professor Fábio Cabrini:
 
